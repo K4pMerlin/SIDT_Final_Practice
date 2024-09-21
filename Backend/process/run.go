@@ -1,5 +1,9 @@
 package process
 
+import (
+    "strings"
+)
+
 var ChoseSpecialDate = new(CourseDate)
 
 type CourseDate struct {
@@ -46,4 +50,19 @@ func init() {
 		buildingMap, _ := findBuildingMapWithKeys(i)
 		buildingMapArray = append(buildingMapArray, buildingMap)
 	}
+}
+
+func SearchCourses(query string) []RespTeachInfo {
+    var results []RespTeachInfo
+    query = strings.ToLower(query)
+
+    for _, info := range respTeachInfos {
+        if strings.Contains(strings.ToLower(info.CourseName), query) ||
+           strings.Contains(strings.ToLower(info.TeacherName), query) ||
+           strings.Contains(strings.ToLower(info.ClassRoom), query) {
+            results = append(results, info)
+        }
+    }
+
+    return results
 }

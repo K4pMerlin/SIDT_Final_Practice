@@ -1,5 +1,14 @@
 package process
 
+import (
+	"CengkeHelper/logger"
+	"encoding/json"
+	"fmt"
+	"os"
+	"sort"
+	"strings"
+	"time"
+)
 
 func CurCourseTime() (weekNum int, weekday int, lessonNum int) {
 	now := time.Now()
