@@ -1,5 +1,26 @@
 package process
 
+import (
+	"CengkeHelper/logger"
+	"encoding/json"
+	"fmt"
+	"os"
+	"sort"
+	"strings"
+	"time"
+)
+
+func findCurTimeTeachInfosMap(buildingMap map[string][]TeachInfo) map[string][]TeachInfo {
+	weekNum, weekday, lessonNum := CurCourseTime()
+	//fmt.Printf("%d %d %d", weekNum, weekday, lessonNum)
+	courses := filterMapByCondition(buildingMap, func(info TeachInfo) bool {
+		if info.MatchTime(weekNum, weekday, lessonNum) {
+			return true
+		}
+		return false
+	})
+	return courses
+}
 
 func CurCourseTime() (weekNum int, weekday int, lessonNum int) {
 	now := time.Now()
@@ -79,6 +100,42 @@ func CurCourseTime() (weekNum int, weekday int, lessonNum int) {
 		lessonNum = -5
 	}
 	return weekNum, weekday, lessonNum
+}
+
+func isTimeBeforeHourAndMin(inputTime time.Time, hour int, min int) bool {
+	return inputTime.Before(
+		time.Date(inputTime.Year(), inputTime.Month(), inputTime.Day(),
+			hour, min, 0, 0,
+			inputTime.Location()))
+}
+
+func filterMapByCondition(buildingMap map[string][]TeachInfo,
+	condition func(info TeachInfo) bool) map[string][]TeachInfo {
+	res := make(map[string][]TeachInfo)
+	for building, teachInfos := range buildingMap {
+		tempArray := make([]TeachInfo, 0)
+		for _, info := range teachInfos {
+			if len(info.CourseTime) != 1 {
+				logger.Error("assert error!", info)
+			}
+
+			if condition(info) {
+				//logger.Warning(building)
+				tempArray = append(tempArray, info)
+			}
+		}
+		if len(tempArray) == 0 {
+			continue
+		}
+
+		// 为tempArray排序
+		sort.Slice(tempArray, func(i, j int) bool {
+			return tempArray[i].Address[0] < tempArray[j].Address[0]
+		})
+		res[building] = tempArray
+	}
+
+	return res
 }
 
 func findBuildingMapWithKeys(partNum int) (map[string][]TeachInfo, []string) {
@@ -163,3 +220,27 @@ func findBuildingMapWithKeys(partNum int) (map[string][]TeachInfo, []string) {
 
 	return buildingMap, keys
 }
+
+func readTeachInfosByPart(partNum int) []TeachInfo {
+	if partNum < 1 || partNum > 5 {
+		return nil
+	}
+
+	fileName := fmt.Sprintf("whu/process/step2/part%d/teach_info.json", partNum)
+	data, err := os.ReadFile(fileName)
+	if err != nil {
+		logger.Error(err)
+		return nil
+	}
+	teachInfos := make([]TeachInfo, 0)
+	err = json.Unmarshal(data, &teachInfos)
+	if err != nil {
+		logger.ErrorF("解析文件 %v 失败: %v", fileName, err)
+		return nil
+	}
+
+	//logger.Debug(len(teachInfos))
+	return teachInfos
+}
+
+// 分区
