@@ -226,7 +226,7 @@ func readTeachInfosByPart(partNum int) []TeachInfo {
 		return nil
 	}
 
-	fileName := fmt.Sprintf("whu/process/step2/part%d/teach_info.json", partNum)
+	fileName := fmt.Sprintf("data/part%d/teach_info.json", partNum)
 	data, err := os.ReadFile(fileName)
 	if err != nil {
 		logger.Error(err)

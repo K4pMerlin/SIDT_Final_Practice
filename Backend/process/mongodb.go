@@ -10,16 +10,16 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func main() {
+func data_test() {
 	// 创建 MongoDB 客户端连接选项
 	clientOptions := options.Client().ApplyURI("mongodb://sbzz_admin:sbzz123@127.0.0.1:27017/admin")
+	fmt.Println("Successfully initialize Client")
 
 	// 连接到 MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		log.Fatal("Error connecting to MongoDB:", err)
 	}
-
 	// 确保成功连接
 	err = client.Ping(context.TODO(), nil)
 	if err != nil {

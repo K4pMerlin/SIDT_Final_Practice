@@ -1,0 +1,249 @@
+[
+  {
+    "courseType": "专业课",
+    "courseName": "网络空间安全前沿技术（三）",
+    "teachers": [
+      {
+        "name": "曹越",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "新珈楼B103"
+    ],
+    "courseTime": [
+      "星期一第2-4节{3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "网安基地"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "网络空间安全前沿技术（三）",
+    "teachers": [
+      {
+        "name": "曹越",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "新珈楼B103"
+    ],
+    "courseTime": [
+      "星期二第2-4节{3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "网安基地"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "网络空间安全前沿技术（三）",
+    "teachers": [
+      {
+        "name": "曹越",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "新珈楼B103"
+    ],
+    "courseTime": [
+      "星期三第2-4节{3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "网安基地"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "网络空间安全前沿技术（三）",
+    "teachers": [
+      {
+        "name": "曹越",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "新珈楼B103"
+    ],
+    "courseTime": [
+      "星期四第2-4节{3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "网安基地"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "网络空间安全前沿技术（三）",
+    "teachers": [
+      {
+        "name": "曹越",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "新珈楼B103"
+    ],
+    "courseTime": [
+      "星期五第2-5节{3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "网安基地"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全能力综合实训（三）",
+    "teachers": [
+      {
+        "name": "崔竞松",
+        "title": "副教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期一第2-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全能力综合实训（三）",
+    "teachers": [
+      {
+        "name": "崔竞松",
+        "title": "副教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期二第2-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全能力综合实训（三）",
+    "teachers": [
+      {
+        "name": "崔竞松",
+        "title": "副教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期三第2-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全能力综合实训（三）",
+    "teachers": [
+      {
+        "name": "崔竞松",
+        "title": "副教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期四第2-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全能力综合实训（三）",
+    "teachers": [
+      {
+        "name": "崔竞松",
+        "title": "副教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期五第2-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全基础能力实践",
+    "teachers": [
+      {
+        "name": "王鹃",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期二第2-4,6-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全基础能力实践",
+    "teachers": [
+      {
+        "name": "王鹃",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期四第2-4,6-8节{1-3周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  },
+  {
+    "courseType": "专业课",
+    "courseName": "系统安全基础能力实践",
+    "teachers": [
+      {
+        "name": "王鹃",
+        "title": "教授"
+      }
+    ],
+    "faculty": "国家网络安全学院",
+    "address": [
+      "--"
+    ],
+    "courseTime": [
+      "星期五第2-4,6-8节{1-2周}"
+    ],
+    "region": "网安基地",
+    "regionId": "--"
+  }
+]
