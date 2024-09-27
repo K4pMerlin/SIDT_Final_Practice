@@ -120,11 +120,15 @@ func SearchCourses(query string) []RespTeachInfo {
 	var results []RespTeachInfo
 	query = strings.ToLower(query)
 
-	for _, info := range respTeachInfos {
-		if strings.Contains(strings.ToLower(info.CourseName), query) ||
-			strings.Contains(strings.ToLower(info.TeacherName), query) ||
-			strings.Contains(strings.ToLower(info.ClassRoom), query) {
-			results = append(results, info)
+	for _, buildingInfos := range respTeachInfos {
+		for _, building := range buildingInfos {
+			for _, teachInfo := range building.Infos {
+				if strings.Contains(strings.ToLower(teachInfo.CourseName), query) ||
+					strings.Contains(strings.ToLower(teachInfo.TeacherName), query) ||
+					strings.Contains(strings.ToLower(teachInfo.Room), query) {
+					results = append(results, teachInfo)
+				}
+			}
 		}
 	}
 
