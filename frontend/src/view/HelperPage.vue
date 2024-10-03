@@ -37,7 +37,7 @@ watch(validData, (newValue) => {
   </div>
 
   <div class="float-right mr-[4vw]">
-    交流群: 240728548
+    交流群: 813278961
   </div>
 
   <div>
