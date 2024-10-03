@@ -1,0 +1,39 @@
+{
+  "name": "ceng-ke-helper-dev",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/node": "^22.7.0",
+    "@types/vue": "^2.0.0",
+    "@vicons/ionicons5": "^0.12.0",
+    "axios": "^1.7.7",
+    "bootstrap-icons": "^1.11.3",
+    "element-plus": "^2.8.3",
+    "preline": "^2.5.0",
+    "vue": "^3.5.9",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/runtime-core": "^3.5.9",
+    "autoprefixer": "^10.4.20",
+    "naive-ui": "^2.39.0",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.3",
+    "scss": "^0.2.4",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.3",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-element-plus": "^0.8.0",
+    "unplugin-vue-components": "^0.27.4",
+    "vfonts": "^0.0.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.1.6"
+  }
+}
