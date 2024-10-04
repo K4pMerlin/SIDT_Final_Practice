@@ -24,7 +24,7 @@ cd backend; go run main.go
 
 如果在终端看到如下 `CengKeHelper` 样的字符信息，则说明服务启动成功：
 
-![](https://github.com/K4pMerlin/SIDT_Final_Practice/tree/main/docs/pic/Snipaste_2024-10-04_19-07-05.png)
+![image](https://github.com/K4pMerlin/SIDT_Final_Practice/main/docs/pic/Snipaste_2024-10-04_19-07-05.png)
 
 可以在浏览器中输入以下地址查看服务：
 
@@ -32,7 +32,7 @@ cd backend; go run main.go
 http://localhost:8000
 ```
 
-![](https://github.com/K4pMerlin/SIDT_Final_Practice/tree/main/docs/pic/Snipaste_2024-10-04_19-17-00.png)
+![image](https://github.com/K4pMerlin/SIDT_Final_Practice/main/docs/pic/Snipaste_2024-10-04_19-17-00.png)
 
 ## 文件架构：
 
